@@ -10,14 +10,14 @@
     "subtitle": "Built with Zara",
     "description": "12c754b4 7ce1 4e3b Aead 14d5052732c4 is a Base Mini App built with Zara.",
     "iconUrl": "https://0co.to/images/zara-2.png",
-    "homeUrl": "https://12c754b4-7ce1-4e3b-aead-14d5052732c4.vistara.dev",
-    "splashImageUrl": "https://dummyimage.com/200x200/0a0b0d/ffffff.png&text=Splash",
+    "homeUrl": "https://12c754b47ce14e3baead14d5052732c4-gq2t-g9oh12xnu-vistara.vercel.app",
+    "splashImageUrl": "https://12c754b47ce14e3baead14d5052732c4-gq2t-g9oh12xnu-vistara.vercel.app/splash.png",
     "splashBackgroundColor": "#000000",
-    "heroImageUrl": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Hero",
+    "heroImageUrl": "https://12c754b47ce14e3baead14d5052732c4-gq2t-g9oh12xnu-vistara.vercel.app/image.png",
     "tagline": "12c754b4 7ce1 4e3b Aead 14d5052732c4",
     "screenshotUrls": [
-      "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Shot1",
-      "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Shot2"
+      "https://12c754b47ce14e3baead14d5052732c4-gq2t-g9oh12xnu-vistara.vercel.app/screenshot.png",
+      "https://12c754b47ce14e3baead14d5052732c4-gq2t-g9oh12xnu-vistara.vercel.app/screenshot.png"
     ],
     "primaryCategory": "social",
     "tags": [
@@ -25,6 +25,6 @@
       "miniapp",
       "onchainkit"
     ],
-    "webhookUrl": "https://12c754b4-7ce1-4e3b-aead-14d5052732c4.vistara.dev/api/webhook"
+    "webhookUrl": "https://12c754b47ce14e3baead14d5052732c4-gq2t-g9oh12xnu-vistara.vercel.app/api/webhook"
   }
 }
