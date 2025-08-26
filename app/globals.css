@@ -22,27 +22,39 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md transition-colors;
+    @apply bg-primary hover:bg-primary/90 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-md transition-all duration-200 hover:shadow-hover focus:ring-2 focus:ring-primary/50 focus:outline-none;
   }
   
   .btn-secondary {
-    @apply bg-surface hover:bg-surface/80 text-text border border-white/20 px-4 py-2 rounded-md transition-colors;
+    @apply bg-surface hover:bg-surface/80 text-text border border-white/20 px-3 py-2 sm:px-4 sm:py-2 rounded-md transition-all duration-200 hover:shadow-hover focus:ring-2 focus:ring-white/20 focus:outline-none;
   }
   
   .btn-accent {
-    @apply bg-accent hover:bg-accent/90 text-bg px-4 py-2 rounded-md transition-colors;
+    @apply bg-accent hover:bg-accent/90 text-bg px-3 py-2 sm:px-4 sm:py-2 rounded-md transition-all duration-200 hover:shadow-hover focus:ring-2 focus:ring-accent/50 focus:outline-none;
+  }
+  
+  .btn-ghost {
+    @apply text-muted hover:text-text bg-transparent hover:bg-white/5 px-3 py-2 rounded-md transition-all duration-200 focus:ring-2 focus:ring-white/10 focus:outline-none;
   }
   
   .card {
-    @apply bg-surface border border-white/10 rounded-lg p-6 shadow-card;
+    @apply bg-surface border border-white/10 rounded-lg p-4 sm:p-6 shadow-card transition-all duration-200;
+  }
+  
+  .card-hover {
+    @apply card hover:border-white/20 hover:shadow-hover;
   }
   
   .input-field {
-    @apply bg-surface border border-white/20 rounded-md px-3 py-2 text-text placeholder:text-muted focus:border-accent focus:outline-none;
+    @apply bg-surface border border-white/20 rounded-md px-3 py-2 text-text placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent/30 focus:outline-none transition-all duration-200;
   }
 
   .textarea-field {
-    @apply bg-surface border border-white/20 rounded-md px-3 py-2 text-text placeholder:text-muted focus:border-accent focus:outline-none min-h-[120px] resize-y;
+    @apply bg-surface border border-white/20 rounded-md px-3 py-2 text-text placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent/30 focus:outline-none min-h-[120px] resize-y transition-all duration-200;
+  }
+  
+  .badge-primary {
+    @apply bg-primary/20 text-primary px-2 py-1 rounded-full text-xs font-medium;
   }
   
   .status-badge {
@@ -64,6 +76,10 @@
   .status-sold {
     @apply bg-success/20 text-success;
   }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary;
+  }
 }
 
 @keyframes fadeIn {
@@ -71,8 +87,18 @@
   to { opacity: 1; }
 }
 
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
 @keyframes slideUp {
   from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-10px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
 
