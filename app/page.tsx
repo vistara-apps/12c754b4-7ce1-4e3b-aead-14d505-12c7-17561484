@@ -1,4 +1,3 @@
-
 "use client";
 
 import {
@@ -169,7 +168,7 @@ export default function App() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-bg via-bg to-surface">
-      <div className="w-full max-w-md mx-auto px-lg py-md">
+      <div className="w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto px-md sm:px-lg py-md">
         <header className="flex justify-between items-center mb-lg">
           <Wallet className="z-10">
             <ConnectWallet>

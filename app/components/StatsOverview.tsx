@@ -1,4 +1,3 @@
-
 "use client";
 
 import { TrendingUp, Lock, DollarSign, Zap } from "lucide-react";
@@ -37,11 +36,15 @@ export function StatsOverview() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-sm mb-xl">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-sm mb-xl">
       {stats.map((stat, index) => {
         const Icon = stat.icon;
         return (
-          <div key={stat.label} className="card animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+          <div 
+            key={stat.label} 
+            className="card animate-fade-in p-sm sm:p-md" 
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
             <div className="flex items-center gap-sm mb-xs">
               <Icon className={`w-4 h-4 ${stat.color}`} />
               <span className="text-xs text-muted">{stat.label}</span>
